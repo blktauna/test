@@ -1,0 +1,28 @@
+/*!
+ for tuning Flight
+ */
+
+
+.jumbotron {
+	background-image: url("../img/clouds.jpg");
+	background-position-y: 70%, top;
+	opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+img {
+  opacity: 0.7;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+
+h1 {
+color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#calc{margin-bottom: 20px;}
+
+#seeResult, #beginAgain {margin-top: 20px;}

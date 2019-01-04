@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Intent Media test">
+    <meta name="author" content="Donna Bowers">
+   
+
+    <title>Miles</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/sticky-footer.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/flight.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Check Your Miles</h1>
+        </div>
+      </div>
+
+      <div class="container">
+      <p>Currently we are only providing information between JFK, LAX, LAS and PDX. Please check back soon for an expanded list.</p>
+        <!-- row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Choose origin</h2>
+            <p><select class="origin" name="origin" id="orig">
+            <option value="NON">---</option>
+            <option value="JFK">JFK</option>
+            <option value="LAX">LAX</option>
+            <option value="LAS">LAS</option>
+            <option value="PDX">PDX</option>
+            </select>
+            <div class="alert alert-warning" role="alert" id="erroro"></div>
+            </p>
+            </div>
+          <div class="col-md-4">
+            <h2>Choose destination</h2>
+            <p><select class="destination" name="destination" id="dest">
+            <option value="NON">---</option>
+            <option value="JFK">JFK</option>
+            <option value="LAX">LAX</option>
+            <option value="LAS">LAS</option>
+            <option value="PDX">PDX</option>
+            </select>
+            <div class="alert alert-warning" role="alert" id="errord"></div>
+            </p>
+          </div>
+          <div class="col-md-4">
+          	
+            <div>
+            <button type="button" class="btn btn-primary" id="seeResult">See Result &raquo;</button>
+            <button type="button" class="btn btn-secondary" id="beginAgain">Begin Again &raquo;</button>
+            </div>
+          
+          </div>
+          
+          
+        </div>
+
+        <hr>
+        
+        <!-- row of columns -->
+        <div class="row">
+        	<div class="col-md-12">
+          		<div id="calc">
+            		<h2>Your Miles</h2>
+            		<div id="results"></div>
+            		<div class="alert alert-warning" role="alert" id="errorr"></div>
+            	</div>
+            </div>
+        </div>
+
+      </div> <!-- /container -->
+
+    </main>
+
+	<footer class="footer">
+      <div class="container">
+        <span class="text-muted">&copy; DB 2018-2019  Your legal here.</span>
+      </div>
+    </footer>
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flights.js"></script>
+    <script src="js/exercise.js"></script>
+  </body>
+</html>
